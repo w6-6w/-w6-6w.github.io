@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+/*页面整体样式*/
+body{
+	margin:0;
+	width:100%;
+	font-size:15px;
+	font-family:"微软雅黑";
+}
+.clear{
+	clear:both;
+}
+a{
+	color:#000000;
+	text-decoration:none;
+}
+.container{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+}
+/*页面头部店名logo样式*/
+.header{
+	width:1515px;
+	height:150px;
+}
+.header .header_logo{
+	width:200px;
+	height:95px;
+	margin-left:150px;
+	padding-top:50px;
+	float:left;
+	
+}
+.header .header_logo .logo{
+	font-size:35px;
+	color:#00AEAE;
+	font-family:"华文行楷";
+	text-align:center;
+}
+.header .header_logo .caixi{
+	font-size:18px;
+	color:#999;
+	font-family:"黑体";
+	text-align:center;
+}
+.header .huanyingdenglu{
+	width:100px;
+	height:70px;
+	float:left;
+	margin-left:50px;
+	margin-top:40px;
+	line-height:70px;
+	color:#333;
+	font-size:16px;
+}
+/*页面中部样式*/
+.content{
+	width:1200px;
+	height:505px;
+	margin:0 auto;
+}
+.content .content_beijing{
+	float:left;
+}
+.content .content_beijing img{
+	width:1200px;
+	height:408px;
+}
+.mainbox{
+	float:left;
+	width:410px;
+	height:408px;
+	margin-left:700px;
+	border:1px solid #999;
+	position:absolute;
+}
+.mainbox #main{
+	width:410px;
+	height:368px;
+	padding-top:40px;
+	background-color:#FFF;
+}
+.mainbox #main .main_one{
+	width:410px;
+	height:30px;
+	text-align:center;
+}
+.mainbox #main .main_one a{
+	color:#333;
+	font-size:2em;
+}
+.mainbox #main .main_one span{
+	font-size:23px;
+}
+.mainbox #main .main_one a:active{
+	color:#ff6700;
+}
+.mainbox #main .main_two{
+	width:320px;
+	clear:both;
+	margin:0 auto;
+	font-size:16px
+}
+.mainbox #main .main_two .main_two_list form{
+	width:320px;
+	margin:0 auto;
+	
+}
+.mainbox #main .main_two .main_two_list form input{
+	width:306px;
+	height:50px;
+	border:1px solid #e0e0e0;
+	margin-bottom:20px;
+	padding-left:1em;
+	font-size:16px;
+}
+.mainbox #main .main_two .main_two_list form .denglu{
+	background-color:#ff6700;
+	width:325px;
+	text-align:center;
+	color:#fff;
+}
+.mainbox #main .main_two .main_two_list a{
+	color:#b0b0b0;
+}
+.mainbox #main .main_two .main_two_list a:hover{
+	color:#ff6700;
+}
+.mainbox #main .main_two .main_two_list .zhuce_1{
+	float:left;
+
+}
+.mainbox #main .main_two .main_two_list .zhuce_1 a{
+    color:#ff6700;
+}
+.mainbox #main .main_two .main_two_list .zhuce_2{
+	float:right;
+}
+.content .content_beijing1{
+	float:left;
+}
+.content .content_beijing1 img{
+	width:85px;
+	height:450px;
+}
+/*页面底部样式*/
+.footer{
+	width:1518px;
+}
+.footer .footer_bottom{
+	width:1200px;
+	height:50px;
+	color:#999;
+	margin:0 auto;
+	background-color:#EFEFEF;
+	padding:5px 0 0 10px;
+}
