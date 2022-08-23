@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*页面整体样式*/
+body{
+	margin:0;
+	width:100%;
+	font-size:15px;
+	font-family:"楷体";
+}
+.clear{
+	clear:both;
+}
+a{
+	color:#000;
+}
+
+/*页面中部样式*/
+#container{
+	width:100%;
+}
+#return{
+	position:fixed;
+	right:0;
+	bottom:50px;
+	width:35px;
+	height:35px;
+	opacity:0.7;
+	background-image:url(../images/beijing.png);
+	background-repeat:no-repeat;
+}
+#return a:link{
+	color:#336;
+}
+#return a:visited{
+	color:#336;
+}
+#return a:hover{
+	font-weight:bolder;
+}
+#header{
+	width:1200px;
+	margin:0 auto;
+	height:50px;
+}
+#header #header_logo{
+	margin:-5px 170px 5px 30px;
+	float:left;
+}
+#header #header_logo img{
+	width:40px;
+	height:40px;
+	float:left;
+}
+#header #header_logo span{
+	font-family:"黑体";
+	color:#000;
+	font-size:20px;
+	display:block;
+	float:left;
+	margin-top:10px;
+}
+#header #header_menu ul li{
+	display:block;
+	float:left;
+	margin-left:50px;
+	margin-top:10px;
+}
+
+#header #header_menu ul li a{
+	display:block;
+	width:70px;
+	height:45px;
+	margin-top:-23px;
+	padding-top:20px;
+	text-align:center;
+	background-color:#FFF;
+}
+#header #header_menu ul li a span{
+	font-size:17px;
+}
+#header #header_menu ul li a:link{
+	color:#000;
+	text-decoration:none;
+}
+#header #header_menu ul li a:hover{
+	font-weight:bolder;
+}
+#header #header_sousuo a img{
+	display:block;
+	float:left;
+	width:30px;
+	height:30px;
+	margin:-3px 40px 0 50px;
+}
+#header #header_denglu{
+	float:left;
+	margin-top:7px;
+}
+#header #header_denglu a:link{
+	color:#000;
+	text-decoration:none;
+}
+#header #header_denglu a:hover{
+	font-weight:bolder;
+}
+#content #content_beijing{
+	background-image:url(../images/beijing.png);
+	background-repeat:repeat;
+	margin-top:-10px;
+}
+#content #content_top img{
+	width:100%;
+}
+#content #content_mainBox{
+	width:1350px;
+	margin:0 auto;
+}
+#content #content_mainBox .group a{
+	color:#336;
+}
+#header #header_menu ul #position li a:visited{
+	color:#FFF;
+	background-color:#69c;
+}
+#content #content_mainBox .group a:hover{
+    transform:scale(1.03,1.03);
+	transition:transform 0.8s;	
+}
+#content #content_mainBox .group span{
+	font-family:"黑体";
+	color:#000;
+	font-size:20px;
+	display:block;
+	float:left;
+	margin:30px 0 0 0px;
+	border-bottom:2px solid #000;
+}
+#content #content_mainBox .group h3{
+	margin:0 0 50px 20px;
+}
+#content #content_mainBox .group #tubiao1 img{
+	width:30px;
+	height:30px;
+	display:block;
+	float:left;
+	margin-top:25px
+}
+#content #content_mainBox .clear{
+	clear:both;
+}
+#content #content_mainBox h1{
+	text-align:center;
+}
+#content #content_mainBox span{
+	font-size:25px;
+}
+#content #content_mainBox #sheying7{
+	width:640px;
+	height:426px;
+	float:left;
+	margin:10px 50px 50px 0;
+}
+#content #content_mainBox #sheying7 img{
+	width:640px;
+	height:426px;
+}
+#content #content_mainBox #sheying7 img:hover{
+	transform:scale(1.03,1.03);
+	transition:transform 0.8s;
+	position:relative;
+}
+#content #content_mainBox #zuopin3{
+	width:658px;
+	height:496px;
+	float:left;
+	margin:10px 0 40px 0;
+}
+#content #content_mainBox #zuopin3 img{
+	width:658px;
+	height:426px;
+}
+#content #content_mainBox #zuopin3 img:hover{
+	transform:scale(1.03,1.03);
+	transition:transform 0.8s;
+	position:relative;
+}
+#content #content_mainBox #zuopin5{
+	width:900px;
+	height:744px;
+	float:left;
+	margin:40px 0 40px 180px;
+}
+#content #content_mainBox #zuopin5 img{
+	width:900px;
+	height:674px;
+}
+#content #content_mainBox #zuopin5 img:hover{
+	transform:scale(1.03,1.03);
+	transition:transform 0.8s;
+	position:relative;
+}
+/*页面底部样式*/
+#footer{
+	width:100%;
+	height:100px;
+	text-align:center;
+	color:#FFF;
+	padding-top:20px;
+	font-weight:bold;
+	background-color:#333;
+}
+

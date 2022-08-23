@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>摄影个人爱好网页之首页</title>
+<link rel="stylesheet" href="CSS/style1.css">
+<script type="text/javascript"> 
+var speed=10; 
+var citeH=0; 
+var flag; 
+window.onload=function(){ 
+  var cite=document.getElementById("cite"); 
+  var word=document.getElementById("word"); 
+  var img1=document.getElementById("img1"); 
+    
+  function addHeight(){ 
+    clearInterval(flag); 
+    cite.style.display="block"; 
+    if(citeH<30){ 
+      citeH=citeH+1; 
+      cite.style.height=citeH+"px"; 
+      word.style.height=citeH+"px"; 
+    } 
+    else{ 
+      clearInterval(flag); 
+      return; 
+    } 
+    flag=setInterval(addHeight,speed); 
+  } 
+    
+  function reduceHeight(){ 
+    clearInterval(flag); 
+    if(citeH>0){ 
+      citeH=citeH-1; 
+      cite.style.height=citeH+"px"; 
+      word.style.height=citeH+"px"; 
+    } 
+    else{ 
+      clearInterval(flag); 
+      cite.style.display="none"; 
+      return; 
+    }  
+    flag=setInterval(reduceHeight,speed);  
+  } 
+    
+  if(img1.addEventListener){ 
+    img1.addEventListener("mouseover",addHeight,false); 
+    img1.addEventListener("mouseout",reduceHeight,false); 
+  } 
+  else{ 
+    img1.attachEvent("onmouseover",addHeight); 
+    img1.attachEvent("onmouseout",reduceHeight); 
+  } 
+} 
+</script>
+</head>
+
+<body>
+<div id="container">
+    <a name="ch1"></a>
+    <div id="return">
+        <a href="#ch1"><span>返回顶端</span></a> 
+    </div>
+    <div id="header">
+        <div id="header_logo">
+            <img src="images/logo.png"><span>爱摄影</span>
+        </div>
+        <div id="header_menu">
+            <ul>
+                <div id="position"><li><a href="index.html"><span>首页</span></a></li></div>
+                <li><a href="dongtai.html"><span>最近动态</span></a></li>
+                <li><a href="jiqiao.html"><span>摄影技巧</span></a></li>
+                <li><a href="lianxi.html"><span>联系我们</span></a></li>
+                <li><a href="guanyu.html"><span>关于我们</span></a></li>
+            </ul>
+        </div>
+        <div id="header_sousuo">
+            <a href="#"><img src="images/sousuo.jpg"></a>
+        </div>
+        <div id="header_denglu">
+            <a href="denglu.html">登录</a>
+            <span>|</span>
+            <a href="zhuce.html">注册</a>
+        </div>
+    </div>
+    <div id="content">
+        <div id="content_top">
+            <img src="images/sheying.png">
+        </div>
+        <div id="content_beijing">
+            <div id="content_mainBox">
+                <div class="group">
+                    <span>人像摄影</span>
+                    <div id="tubiao1"><img src="images/logo.png"></div>
+                    <div class="clear"></div>
+                    <h3>Body Art</h3>
+                </div>
+                <div class="clear"></div>
+                <div id="img1" class="img1">
+                <a href="#">
+                    <img src="images/renxiang1.png" border="0">
+                    <div class="cite" id="cite"></div> 
+                    <div class="word" id="word">相机锁住了那一瞬的时间，照片打开了那一刻的记忆</div>
+                </a>
+                </div>
+                <div id="img2"><img src="images/sheying2.jpg"></div>
+                <div class="clear"></div>
+                <div id="img3"><img src="images/sheying3.jpg"></div>
+                <div id="img4"><img src="images/sheying4.jpg"></div>
+                <div class="clear"></div>
+                <div class="group">
+                    <span>自然风景</span>
+                    <div id="tubiao1"><img src="images/logo.png"></div>
+                    <div class="clear"></div>
+                    <h3>Natural Scenery</h3>
+                </div>
+                <div class="clear"></div>
+                <div id="img5"><img src="images/sheying5.jpg"></div>
+                <div id="img6"><img src="images/sheying6.jpg"></div>
+                <div class="clear"></div>
+                <div id="img7"><img src="images/sheying7.jpg"></div>
+                <div id="img8"><img src="images/sheying8.jpg"></div>
+                <div class="clear"></div>
+                <div class="group">
+                    <span>更多照片</span>
+                    <div id="tubiao1"><img src="images/logo.png"></div>
+                    <div class="clear"></div>
+                    <h3>Most Photos</h3>
+                </div>
+                <div class="clear"></div>
+                <div id="img9"><img src="images/sheying9.jpg"></div>
+                <div id="img10"><img src="images/sheying10.jpg"></div>
+                <div id="img11"><img src="images/sheying11.jpg"></div>
+                <div class="clear"></div>
+                <div id="img12"><img src="images/sheying12.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <p>作者：2018740247&emsp;软件二班&emsp;余文塘
+        <p>COPYRIGHT&copy;爱摄影&emsp;&emsp;渝ICP备2020613号-1&emsp;渝公网&emsp;实名认证</p>
+    </div>
+</div>
+</body>
+</html>

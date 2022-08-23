@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*页面整体样式*/
+*{
+	padding:0;
+	margin:0;
+}	
+ul,ol{
+	list-style:none;
+	outline:none;
+}
+body{
+		font-size:14px;
+		line-height:1.5em;
+		font-family:"微软雅黑";
+		color:#333;
+}
+.clear{
+	clear:both;
+}
+a{
+	color:#000;
+	text-decoration:none;
+}
+.container{
+	width:100%;
+	background-image:url(../images/beijing.png);
+	background-repeat:repeat;
+}
+#content{
+	width:1350px;
+	margin:0 auto;
+}
+
+/*页面顶部样式*/
+#header a{
+	color:#000;
+}
+#header .group span{
+	font-family:"黑体";
+	color:#000;
+	font-size:20px;
+	display:block;
+	float:left;
+	margin:30px 0 0 0px;
+	border-bottom:2px solid #000;
+}
+#header .group h3{
+	margin:0 0 50px 20px;
+	text-decoration:underline;
+}
+#header .group #tubiao1 img{
+	width:30px;
+	height:30px;
+	display:block;
+	float:left;
+	margin-top:25px
+}
+/*页面中部样式*/
+#content #img{
+	width:800px;
+	height:450px;
+	float:left;
+}
+#content #img img{
+	width:800px;
+	height:450px;
+}
+.mainbox{
+	float:left;
+	width:410px;
+	height:400px;
+	border:5px solid #999;
+	margin-left:-5px;
+	padding-top:40px;
+}
+.mainbox #main{
+	width:410px;
+	height:400px;
+	background-color:#FFF;
+}
+.mainbox #main .main_one{
+	width:410px;
+	height:30px;
+	text-align:center;
+}
+.mainbox #main .main_one a{
+	color:#333;
+	font-size:2em;
+}
+.mainbox #main .main_one span{
+	font-size:23px;
+}
+.mainbox #main .main_one a:active{
+	color:#ff6700;
+}
+.mainbox #main .main_two{
+	width:320px;
+	clear:both;
+	margin:0 auto;
+	font-size:16px
+}
+.mainbox #main .main_two .main_two_list form{
+	width:320px;
+	margin:0 auto;
+	
+}
+.mainbox #main .main_two .main_two_list form input{
+	width:306px;
+	height:50px;
+	border:1px solid #e0e0e0;
+	margin-bottom:20px;
+	padding-left:1em;
+	font-size:16px;
+}
+.mainbox #main .main_two .main_two_list form .denglu{
+	background-color:#ff6700;
+	width:325px;
+	text-align:center;
+	color:#fff;
+}
+.mainbox #main .main_two .main_two_list a{
+	color:#b0b0b0;
+}
+.mainbox #main .main_two .main_two_list a:hover{
+	color:#ff6700;
+}
+.mainbox #main .main_two .main_two_list .zhuce_1{
+	float:left;
+
+}
+.mainbox #main .main_two .main_two_list .zhuce_1 a{
+    color:#ff6700;
+}
+.mainbox #main .main_two .main_two_list .zhuce_2{
+	float:right;
+}
+/*页面底部样式*/
+#footer{
+	width:100%;
+	height:100px;
+	margin-top:100px;
+	text-align:center;
+	color:#FFF;
+	padding-top:20px;
+	font-weight:bold;
+	background-color:#333;
+}

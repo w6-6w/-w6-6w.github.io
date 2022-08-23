@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>摄影个人爱好网页之最近动态</title>
+<link rel="stylesheet" href="CSS/style2.css"> 
+</style> 
+<script type="text/javascript"> 
+var speed=10; 
+var citeH=0; 
+var flag; 
+window.onload=function(){ 
+  var cite=document.getElementById("cite"); 
+  var word=document.getElementById("word"); 
+  var img8=document.getElementById("img8"); 
+    
+  function addHeight(){ 
+    clearInterval(flag); 
+    cite.style.display="block"; 
+    if(citeH<70){ 
+      citeH=citeH+1; 
+      cite.style.height=citeH+"px"; 
+      word.style.height=citeH+"px"; 
+    } 
+    else{ 
+      clearInterval(flag); 
+      return; 
+    } 
+    flag=setInterval(addHeight,speed); 
+  } 
+    
+  function reduceHeight(){ 
+    clearInterval(flag); 
+    if(citeH>0){ 
+      citeH=citeH-1; 
+      cite.style.height=citeH+"px"; 
+      word.style.height=citeH+"px"; 
+    } 
+    else{ 
+      clearInterval(flag); 
+      cite.style.display="none"; 
+      return; 
+    }  
+    flag=setInterval(reduceHeight,speed);  
+  } 
+    
+  if(img8.addEventListener){ 
+    img8.addEventListener("mouseover",addHeight,false); 
+    img8.addEventListener("mouseout",reduceHeight,false); 
+  } 
+  else{ 
+    img8.attachEvent("onmouseover",addHeight); 
+    img8.attachEvent("onmouseout",reduceHeight); 
+  } 
+} 
+</script>
+</head>
+
+<body>
+<div id="container">
+    <a name="ch1"></a>
+    <div id="return">
+        <a href="#ch1"><span>返回顶端</span></a> 
+    </div>
+    <div id="header">
+        <div id="header_logo">
+            <img src="images/logo.png"><span>爱摄影</span>
+        </div>
+        <div id="header_menu">
+            <ul>
+                <li><a href="index.html"><span>首页</span></a></li>
+                <div id="position"><li><a href="dongtai.html"><span>最近动态</span></a></li></div>
+                <li><a href="jiqiao.html"><span>摄影技巧</span></a></li>
+                <li><a href="lianxi.html"><span>联系我们</span></a></li>
+                <li><a href="guanyu.html"><span>关于我们</span></a></li>
+            </ul>
+        </div>
+        <div id="header_sousuo">
+            <a href="#"><img src="images/sousuo.jpg"></a>
+        </div>
+        <div id="header_denglu">
+            <a href="denglu.html">登录</a>
+            <span>|</span>
+            <a href="zhuce.html">注册</a>
+        </div>
+    </div>
+    <div id="content">
+        <div id="content_top">
+            <img src="images/sheying.png">
+        </div>
+        <div id="content_beijing">
+            <div id="content_mainBox">
+                <div class="group">
+                    <span>作品</span>
+                    <div id="tubiao1"><img src="images/logo.png"></div>
+                    <div class="clear"></div>
+                    <h3>Works</h3>
+                </div>
+                <div class="clear"></div>
+                <div id="img1">
+                    <img src="images/zuopin1.jpg">
+                    <p>&emsp;&emsp;落叶,有的像只船正乘风行驶,有的像杂技演员翻着跟头落下,有的像滑翔机平平地兜着圈子盘旋而下.
+落叶飘向冥冥世界,归于沉寂.没有什么力量可以挽回一片落叶,让它重回枝头,鲜绿如初.这是一种流逝,一段自然的过程.它最后将深入泥土,化为淤肥,滋养另一个新的生命,这是它自身的延续和超越,也是落叶美丽的瞬间的永恒.</p>
+                </div>
+                <div id="img2">
+                    <img src="images/zuopin2.jpg">
+                    <p>&emsp;&emsp;晨曦时分，寂寞的雪地上投映着金色的初阳，柔暖的阳光透过树木，斑驳地洒在大地上，周边的景色在阳光中弥漫，幻化成一幅静美的画卷，整幅画面让人看着很和谐美好，虽然是冬雪时分，却让人觉得很温暖。</p>
+                </div>
+                <div id="img3">
+                    <img src="images/zuopin3.jpg">
+                    <p>&emsp;&emsp;无需肥沃的土壤，无需园丁的细心呵护，哪怕是在贫瘠的岩石缝里，给点阳光，给点春风，它就能成长,真是咬定青山不放松，立根原在破岩中。千磨万击还坚劲，任尔东西南北风。</p>
+                </div>
+                <div class="group">
+                    <span>事件</span>
+                    <div id="tubiao1"><img src="images/logo.png"></div>
+                    <div class="clear"></div>
+                    <h3>Event</h3>
+                </div>
+                <div class="clear"></div>
+                <div id="img4">
+                    <img src="images/zuopin4.jpg">
+                    <span><img src="images/dingwei.jpg">重庆洪崖洞</span>
+                    <p>&emsp;&emsp;这里是来重庆不可少的打卡之地，和千与千寻中孟婆婆的汤屋相似，属于重庆市地标建筑之一。最美角度位于嘉陵江对岸，建议拍摄时间在晚上7:00-9:00，使用中长焦段拍摄。白天的洪崖洞很平常，如果你白天路过这壮观的建筑群，并不会产生梦幻感……但当夜幕降临华灯初上之时，你会感叹这美不胜收的场景。
+                </div>
+                <div id="img5">
+                    <img src="images/zuopin5.jpg">
+                    <span><img src="images/dingwei.jpg">重庆”科尔马小镇“</span>
+                    <p>&emsp;&emsp;在重庆也有一个科尔马法国风情小镇，它在庆隆高尔夫温泉，一个很适合拍照的地方，颜色很丰富，适合时尚的色彩搭配，拍照以抓拍的角度为主，大方自然不做作。
+                </div>
+                <div class="clear"></div>
+                <div id="img6">
+                    <img src="images/zuopin6.jpg">
+                    <span><img src="images/dingwei.jpg">重庆”马尔代夫“</span>
+                    <p>&emsp;&emsp;由于今年特殊，重庆的长江水位退到以前没有的位置，很多奇观也出现了，这个仅仅用了一周时间迅速蹿红的重庆马尔代夫就算一个。这里沙很细很软，且面积很大，有临江边可以涉水，也就成了各个年龄段人群休闲的首先，一秒让人感觉在海边沙滩度假的幸福感。</p>
+                </div>
+                <div id="img7">
+                    <img src="images/zuopin7.jpg">
+                    <span><img src="images/dingwei.jpg">重庆华生园梦幻城堡</span>
+                    <p>&emsp;&emsp;华生园梦幻城堡可以说是重庆火热的拍摄地之一，圆了女生的公主梦。它里面有很多城堡，五颜六色的台阶，城堡中心还可以喂鸽子，有很多有年代感的建筑。很多城堡是不能进的，不要擅自进入。现在华生园梦幻城堡有新添了一道大菜——夜景灯光秀！白天本已非常梦幻的高迪风城堡，在夜间炫酷的灯饰烘托下，又增添了一种神秘的色彩，给人置身于二次元的现实世界的感觉。</p>
+                </div>
+                <div class="clear"></div>
+                <div id="img8" class="img8">
+                <a href="https://baike.baidu.com/item/重庆工业博物馆/1014320?fr=aladdin" target="_blank">
+                    <img src="images/zuopin8.jpg">
+                    <div class="cite" id="cite"></div> 
+                    <div class="word" id="word">重庆工业博物馆<br><img src="images/dingwei.jpg"><span>重庆大渡口区义渡路999号</span></div> 
+                </a>    
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <p>作者：2018740247&emsp;软件二班&emsp;余文塘
+        <p>COPYRIGHT&copy;爱摄影&emsp;&emsp;渝ICP备2020613号-1&emsp;渝公网&emsp;实名认证</p>
+    </div>
+</body>
+</html>
